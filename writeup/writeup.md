@@ -36,11 +36,11 @@ Here is an example using the YUV color space and HOG parameters of orientations=
 
 ![alt text][image3] ![alt text][image7]
 
-**HOG output for vehicle sample image:**
+HOG output for vehicle sample image:
 
 ![alt text][image4]![alt text][image5]![alt text][image6]
 
-**HOG output for non-vehicle sample image:** 
+HOG output for non-vehicle sample image:
 
 ![alt text][image8]![alt text][image9]![alt text][image10]
 
