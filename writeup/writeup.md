@@ -46,7 +46,10 @@ HOG output for non-vehicle sample image:
 
 #### Final choice of HOG parameters
 
-I tried various combinations of parameters and...
+I've tried multiple combinations of parameters. So the final parameters are based on emperical results. 
+Ideally, I would have used a grid search to test all different combinations including colour spaces.
+
+The best result obtained so far was using orientations=9, pixels_per_cell=(8, 8) and cells_per_block=(2, 2):.
 
 #### Train a classifier
 
