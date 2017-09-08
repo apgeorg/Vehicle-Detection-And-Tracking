@@ -31,9 +31,16 @@ I started by reading in all the vehicle and non-vehicle images.  Here are some e
 I then explored different color spaces and different HOG parameters (orientations, pixels_per_cell, and cells_per_block).  I grabbed random images from each of the two classes and displayed them to get a feel how a HOG output looks like.
 Here is an example using the YUV color space and HOG parameters of orientations=9, pixels_per_cell=(8, 8) and cells_per_block=(2, 2):
 
+Vehicle class:
 ![alt text][image3]
 
+HOG output:
 ![alt text][image4]![alt text][image5]![alt text][image6]
+
+
+Non-Vehicle class:
+
+HOG output:
 
 #### Final choice of HOG parameters
 
