@@ -16,31 +16,31 @@ The goals / steps of this project are the following:
 [image4]: ./images/y.png
 [image5]: ./images/u.png
 [image6]: ./images/v.png
+
+[image7]: ./images/samplenotcar.png
+[image8]: ./images/nonY.png
+[image9]: ./images/nonU.png
+[image10]: ./images/nonV.png
 [video1]: ./project_video.mp4
 
 ### Histogram of Oriented Gradients (HOG)
 
 #### Extract HOG features from the training images
 
-I started by reading in all the vehicle and non-vehicle images.  Here are some examples of the vehicle and non-vehicle classes:
+I started by reading in all the vehicle and non-vehicle images. Here are some examples of the vehicle and non-vehicle classes:
 
-![alt text][image1]
-
-![alt text][image2]
+![alt text][image1] ![alt text][image2]
 
 I then explored different color spaces and different HOG parameters (orientations, pixels_per_cell, and cells_per_block).  I grabbed random images from each of the two classes and displayed them to get a feel how a HOG output looks like.
 Here is an example using the YUV color space and HOG parameters of orientations=9, pixels_per_cell=(8, 8) and cells_per_block=(2, 2):
 
-Vehicle class:
-![alt text][image3]
+Vehicle class: ![alt text][image3]
 
-HOG output:
-![alt text][image4]![alt text][image5]![alt text][image6]
+HOG output: ![alt text][image4]![alt text][image5]![alt text][image6]
 
+Non-Vehicle class: ![alt text][image7]
 
-Non-Vehicle class:
-
-HOG output:
+HOG output: ![alt text][image8]![alt text][image9]![alt text][image10]
 
 #### Final choice of HOG parameters
 
