@@ -12,7 +12,10 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 [image1]: ./images/car.png
 [image2]: ./images/notcar.png
-[image233]: ./examples/HOG_example.jpg
+[image3]: ./images/samplecar.png
+[image4]: ./images/y.png
+[image5]: ./images/u.png
+[image6]: ./images/v.png
 [image3]: ./examples/sliding_windows.jpg
 [image4]: ./examples/sliding_window.jpg
 [image5]: ./examples/bboxes_and_heat.png
@@ -34,7 +37,7 @@ I then explored different color spaces and different HOG parameters (orientation
 
 Here is an example using the YUV color space and HOG parameters of orientations=9, pixels_per_cell=(8, 8) and cells_per_block=(2, 2):
 
-![alt text][image3]
+![alt text][image3]![alt text][image4]![alt text][image5]![alt text][image6]
 
 #### Final choice of HOG parameters
 
