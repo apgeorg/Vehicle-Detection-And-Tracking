@@ -53,7 +53,7 @@ Ideally, I would have used a grid search to test all different combinations incl
 
 #### Train a classifier
 
-I've trained a linear SVM classifier with default paramters. I used a random split of 30% for the test set. The final test accuracy achieved over 99%. 
+I've trained a linear SVM classifier with default paramters. I used a random split of 30% for the test data. The classifier achieved an 99% accuracy on the test data. 
 
 ### Sliding Window Search
 
