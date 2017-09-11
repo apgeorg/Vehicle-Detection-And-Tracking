@@ -74,9 +74,9 @@ Each window is defined by a scaling factor where a scale of 1 would result in a 
 
 Ultimately I searched on two scales using YCrCb 3-channel HOG features, which provided a nice result. Here are some example images:
 
-![alt text][image12]![alt text][image13]![alt text][image14]
-
-![alt text][image15]![alt text][image16]![alt text][image17]
+![alt text][image12]![alt text][image13]
+![alt text][image14]![alt text][image15]
+![alt text][image16]![alt text][image17]
 
 ### Video Implementation
 
