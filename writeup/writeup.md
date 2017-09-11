@@ -54,20 +54,20 @@ Ideally, I would have used a grid search to test all different combinations incl
 
 #### Train a classifier
 
-I've trained a linear SVM classifier with default paramters. I used a random split of 20% for the test data. The classifier achieved an 99% accuracy on the test data. 
+I've trained a linear SVM classifier with default paramters. I used a random split of 20% for the test data. The classifier achieved over 99% accuracy on the test data. 
 
 ### Sliding Window Search
 
-#### 1. Hog Sub-sampling Window Search
+#### HOG Sub-sampling Window Search
 
 I decided to use a HOG sub-sampling window search which is a more efficient method for doing the sliding window approach.
-Each window is defined by a scaling factor where a scale of 1 would result in a window that's 8 x 8 cells then the overlap of each window is in terms of the cell distance. Furthermore I use different scale values to generate multiple-scaled search windows. Here is an example of the multiple-scaled search windows. 
+Each window is defined by a scaling factor where a scale of 1 would result in a window that's 8 x 8 cells then the overlap of each window is in terms of the cell distance which I set to 1. Furthermore I use different scale values to generate multiple-scaled search windows. Here is an example of the multiple-scaled search windows. 
 
-![alt text][image3]
+![alt text][image11]
 
-#### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
+#### Examples of test images  
 
-Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
+Ultimately I searched on two scales using YCrCb 3-channel HOG features, which provided a nice result. Here are some example images:
 
 ![alt text][image4]
 ---
