@@ -32,7 +32,7 @@ I started by reading in all the vehicle and non-vehicle images. Here are some ex
 ![alt text][image1] ![alt text][image2]
 
 I then explored different color spaces and different HOG parameters (orientations, pixels_per_cell, and cells_per_block).  I grabbed random images from each of the two classes and displayed them to get a feel how a HOG output looks like.
-Here is an example using the YUV color space and HOG parameters of orientations=9, pixels_per_cell=(8, 8) and cells_per_block=(2, 2):
+Here is an example using the YUV color space and HOG parameters of orientations=9, pixels_per_cell=(16, 16) and cells_per_block=(2, 2):
 
 Sample images of the two classes:
 
@@ -53,13 +53,14 @@ Ideally, I would have used a grid search to test all different combinations incl
 
 #### Train a classifier
 
-I've trained a linear SVM classifier with default paramters. I used a random split of 30% for the test data. The classifier achieved an 99% accuracy on the test data. 
+I've trained a linear SVM classifier with default paramters. I used a random split of 20% for the test data. The classifier achieved an 99% accuracy on the test data. 
 
 ### Sliding Window Search
 
-#### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
+#### 1. Hog Sub-sampling Window Search
 
-I decided to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
+I decided to use a HOG sub-sampling window search which is a more efficient method for doing the sliding window approach.
+Each window is defined by a scaling factor where a scale of 1 would result in a window that's 8 x 8 cells then the overlap of each window is in terms of the cell distance. Furthermore I use different scale values to generate multiple-scaled search windows. Here is an example of the multiple-scaled search windows. 
 
 ![alt text][image3]
 
