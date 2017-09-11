@@ -27,7 +27,6 @@ The goals / steps of this project are the following:
 [image15]: ./images/test4.png
 [image16]: ./images/test5.png
 [image17]: ./images/test6.png
-[video1]: ./project_video.mp4
 
 ### Histogram of Oriented Gradients (HOG)
 
@@ -82,9 +81,7 @@ Ultimately I searched on two scales using YCrCb 3-channel HOG features, which pr
 
 #### Test on project video
 
-The pipeline was applied on the provided project video and the final video result was quite well.
-
-Here's a [link to my video result](./project_video.mp4)
+The pipeline was applied on the provided project video and the final video result was quite well. Here's a [link to my video result](../output_videos/vehicle_detection_output.mp4)
 
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
