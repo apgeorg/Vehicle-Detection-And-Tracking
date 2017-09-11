@@ -16,12 +16,17 @@ The goals / steps of this project are the following:
 [image4]: ./images/y.png
 [image5]: ./images/u.png
 [image6]: ./images/v.png
-
 [image7]: ./images/samplenotcar.png
 [image8]: ./images/nonY.png
 [image9]: ./images/nonU.png
 [image10]: ./images/nonV.png
 [image11]: ./images/windowsearch.png
+[image12]: ./images/test1.png
+[image13]: ./images/test2.png
+[image14]: ./images/test3.png
+[image15]: ./images/test4.png
+[image16]: ./images/test5.png
+[image17]: ./images/test6.png
 [video1]: ./project_video.mp4
 
 ### Histogram of Oriented Gradients (HOG)
@@ -33,7 +38,7 @@ I started by reading in all the vehicle and non-vehicle images. Here are some ex
 ![alt text][image1] ![alt text][image2]
 
 I then explored different color spaces and different HOG parameters (orientations, pixels_per_cell, and cells_per_block).  I grabbed random images from each of the two classes and displayed them to get a feel how a HOG output looks like.
-Here is an example using the YUV color space and HOG parameters of orientations=9, pixels_per_cell=(16, 16) and cells_per_block=(2, 2):
+Here is an example using the YCrCb color space and HOG parameters of orientations=9, pixels_per_cell=(16, 16) and cells_per_block=(2, 2):
 
 Sample images of the two classes:
 
@@ -69,8 +74,9 @@ Each window is defined by a scaling factor where a scale of 1 would result in a 
 
 Ultimately I searched on two scales using YCrCb 3-channel HOG features, which provided a nice result. Here are some example images:
 
-![alt text][image4]
----
+![alt text][image12]![alt text][image13]![alt text][image14]
+
+![alt text][image15]![alt text][image16]![alt text][image17]
 
 ### Video Implementation
 
