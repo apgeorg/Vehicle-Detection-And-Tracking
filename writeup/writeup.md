@@ -63,7 +63,7 @@ I've trained a linear SVM classifier with default paramters. I used a random spl
 
 ### Sliding Window Search
 
-#### HOG Sub-sampling Window Search
+#### HOG Sub-sampling window search
 
 I decided to use a HOG sub-sampling window search which is a more efficient method for doing the sliding window approach.
 Each window is defined by a scaling factor where a scale of 1 would result in a window that's 8 x 8 cells then the overlap of each window is in terms of the cell distance which I set to 1. Furthermore, I use different scale values to generate multiple-scaled search windows. Here is an example of the multiple-scaled search windows. 
@@ -80,7 +80,10 @@ Ultimately I searched on two scales using YCrCb 3-channel HOG features, which pr
 
 ### Video Implementation
 
-#### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
+#### Test on project video
+
+The pipeline was applied on the provided project video and the final video result was quite well.
+
 Here's a [link to my video result](./project_video.mp4)
 
 
