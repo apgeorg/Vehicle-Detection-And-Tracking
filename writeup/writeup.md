@@ -66,7 +66,7 @@ I've trained a linear SVM classifier with default paramters. I used a random spl
 #### HOG Sub-sampling Window Search
 
 I decided to use a HOG sub-sampling window search which is a more efficient method for doing the sliding window approach.
-Each window is defined by a scaling factor where a scale of 1 would result in a window that's 8 x 8 cells then the overlap of each window is in terms of the cell distance which I set to 1. Furthermore I use different scale values to generate multiple-scaled search windows. Here is an example of the multiple-scaled search windows. 
+Each window is defined by a scaling factor where a scale of 1 would result in a window that's 8 x 8 cells then the overlap of each window is in terms of the cell distance which I set to 1. Furthermore, I use different scale values to generate multiple-scaled search windows. Here is an example of the multiple-scaled search windows. 
 
 ![alt text][image11]
 
