@@ -21,6 +21,7 @@ The goals / steps of this project are the following:
 [image8]: ./images/nonY.png
 [image9]: ./images/nonU.png
 [image10]: ./images/nonV.png
+[image11]: ./images/windowsearch.png
 [video1]: ./project_video.mp4
 
 ### Histogram of Oriented Gradients (HOG)
