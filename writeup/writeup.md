@@ -1,13 +1,6 @@
 # Vehicle Detection
 
-The goals / steps of this project are the following:
-
-* Perform a Histogram of Oriented Gradients (HOG) feature extraction on a labeled training set of images and train a classifier Linear SVM classifier
-* Optionally, you can also apply a color transform and append binned color features, as well as histograms of color, to your HOG feature vector. 
-* Note: for those first two steps don't forget to normalize your features and randomize a selection for training and testing.
-* Implement a sliding-window technique and use your trained classifier to search for vehicles in images.
-* Run your pipeline on a video stream (start with the test_video.mp4 and later implement on full project_video.mp4) and create a heat map of recurring detections frame by frame to reject outliers and follow detected vehicles.
-* Estimate a bounding box for vehicles detected.
+In this project, the goal is to provide a software pipeline to identify vehicles in a video from a front-facing camera on a car.
 
 [//]: # (Image References)
 [image1]: ./images/car.png
@@ -93,7 +86,7 @@ Here's a [link to my video result](../output_videos/vehicle_detection_output.mp4
 
 I recorded the positions of positive detections in each frame of the video. From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions. Further, I identified individual blobs in the heatmap where I assumed each blob corresponded to a vehicle. I constructed bounding boxes to cover the area of each blob detected.  
 
-Here are six frames and their corresponding heatmaps without threshold.
+Here are six frames and their corresponding heatmaps without threshold:
 
 ![alt text][image12]![alt text][image18]
 ![alt text][image13]![alt text][image19]
@@ -101,7 +94,15 @@ Here are six frames and their corresponding heatmaps without threshold.
 
 ### Discussion
 
-#### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+One possible problem of the algorithm could occur in the detection of vehicles in different weather and light conditions. The used dataset is too small, so more data sources and data augmentation techniques can help to improve the classifier. Further, an ensemble of different classifiers for detection can make the pipeline more robust and improve the final accuracy. In addition to that, an exploration and combination of different color spaces and the usage of spatial binning and histogram features could be helpful but also imporove the complexity. 
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+By increasing the complexity, the pipeline could suffer under performance issues. I believe that state-of-the art deep learning approaches like SSD and YOLO could help.  
 
+Another possible problem is the appearance of false positives which are caused by misclassification. In the current pipeline we are filtering out these false positives with heatmap thresholds. An more intelligent filter technique like tracking the bounding boxes over several frames could decrease the appearance of false positives and improve the overall algorithm. 
+
+Improvements:
+- Fine tune of hype parameters 
+- Usage of histogram and spatial binning features
+- Ensemble of different classifiers 
+- More training data and data augmetation techniques
+- More sophisticated filter techniques 
