@@ -81,7 +81,8 @@ Ultimately I searched on two scales using YCrCb 3-channel HOG features, which pr
 
 #### Test on project video
 
-The pipeline was applied on the provided project video and the final video result was quite well. Here's a [link to my video result](../output_videos/vehicle_detection_output.mp4)
+The pipeline was applied on the provided project video and the final video result was quite well. 
+Here's a [link to my video result](../output_videos/vehicle_detection_output.mp4)
 
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
