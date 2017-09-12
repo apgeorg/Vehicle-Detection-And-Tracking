@@ -86,7 +86,7 @@ Here's a [link to my video result](../output_videos/vehicle_detection_output.mp4
 
 I recorded the positions of positive detections in each frame of the video. From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions. Further, I identified individual blobs in the heatmap where I assumed each blob corresponded to a vehicle. I constructed bounding boxes to cover the area of each blob detected.  
 
-Here are six frames and their corresponding heatmaps without threshold:
+Here are three frames and their corresponding heatmaps without threshold:
 
 ![alt text][image12]![alt text][image18]
 ![alt text][image13]![alt text][image19]
