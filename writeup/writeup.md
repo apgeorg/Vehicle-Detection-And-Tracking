@@ -13,13 +13,13 @@ The goals / steps of this project are the following:
 [image1]: ./images/car.png
 [image2]: ./images/notcar.png
 [image3]: ./images/samplecar.png
-[image4]: ./images/y.png
-[image5]: ./images/u.png
-[image6]: ./images/v.png
+[image4]: ./images/car_ch0.png
+[image5]: ./images/car_ch1.png
+[image6]: ./images/car_ch2.png
 [image7]: ./images/samplenotcar.png
-[image8]: ./images/nonY.png
-[image9]: ./images/nonU.png
-[image10]: ./images/nonV.png
+[image8]: ./images/non_ch0.png
+[image9]: ./images/non_ch1.png
+[image10]: ./images/non_ch2.png
 [image11]: ./images/windowsearch.png
 [image12]: ./images/test1.png
 [image13]: ./images/test2.png
@@ -82,14 +82,15 @@ Ultimately I searched on two scales using YCrCb 3-channel HOG features, which pr
 #### Test on project video
 
 The pipeline was applied on the provided project video and the final video result was quite well. 
+
 Here's a [link to my video result](../output_videos/vehicle_detection_output.mp4)
 
 
-#### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
+#### Combining overlapping bounding boxes
 
-I recorded the positions of positive detections in each frame of the video.  From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions.  I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected.  
+I recorded the positions of positive detections in each frame of the video. From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions. Further, I identified individual blobs in the heatmap where I assumed each blob corresponded to a vehicle. I constructed bounding boxes to cover the area of each blob detected.  
 
-Here's an example result showing the heatmap from a series of frames of video, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video:
+Here's an example result showing the heatmap from a series of frames of video and the bounding boxes then overlaid on the last frame of video:
 
 ### Here are six frames and their corresponding heatmaps:
 
