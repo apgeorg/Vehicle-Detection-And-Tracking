@@ -27,6 +27,9 @@ The goals / steps of this project are the following:
 [image15]: ./images/test4.png
 [image16]: ./images/test5.png
 [image17]: ./images/test6.png
+[image18]: ./images/heat1.png
+[image19]: ./images/heat2.png
+[image20]: ./images/heat3.png
 
 ### Histogram of Oriented Gradients (HOG)
 
@@ -90,11 +93,11 @@ Here's a [link to my video result](../output_videos/vehicle_detection_output.mp4
 
 I recorded the positions of positive detections in each frame of the video. From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions. Further, I identified individual blobs in the heatmap where I assumed each blob corresponded to a vehicle. I constructed bounding boxes to cover the area of each blob detected.  
 
-Here's an example result showing the heatmap from a series of frames of video and the bounding boxes then overlaid on the last frame of video:
+Here are six frames and their corresponding heatmaps without threshold.
 
-### Here are six frames and their corresponding heatmaps:
-
-![alt text][image5]
+![alt text][image12]![alt text][image18]
+![alt text][image13]![alt text][image19]
+![alt text][image14]![alt text][image20]
 
 ### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
 ![alt text][image6]
