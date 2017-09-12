@@ -1,8 +1,5 @@
 #dirs
-.dataset/
-utils/
-*mp4
-*.ipynb 
+.dataset/ 
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
