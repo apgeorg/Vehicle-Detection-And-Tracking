@@ -1,5 +1,7 @@
 #dirs
-.dataset/ 
+.dataset/
+project_video.mp4
+test_video.mp4 
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
