@@ -92,6 +92,8 @@ Here are three frames and their corresponding heatmaps without threshold:
 ![alt text][image13]![alt text][image19]
 ![alt text][image14]![alt text][image20]
 
+In order to reduce the number of false positives, the last 8 frames were stored and then thresholded on the sum of these heatmaps. As a side effect this techniqe results much more stable bounding boxes as well.
+
 ### Discussion
 
 One possible problem of the algorithm could occur in the detection of vehicles in different weather and light conditions. The used dataset is too small, so more data sources and data augmentation techniques can help to improve the classifier. Further, an ensemble of different classifiers for detection can make the pipeline more robust and improve the final accuracy. In addition to that, an exploration and combination of different color spaces and the usage of spatial binning and histogram features could be helpful but also imporove the complexity. 
